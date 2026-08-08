@@ -5,11 +5,11 @@
   --card-border: rgba(85, 54, 160, 0.25);
   --btn-bg: #E6EAF3;
 }
- 
+
 * {
   box-sizing: border-box;
 }
- 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -17,15 +17,16 @@ html, body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
- 
+
 .page {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
- 
+
 .bg-glow {
   position: absolute;
   top: 0;
@@ -41,17 +42,17 @@ html, body {
   filter: brightness(1.8);
   pointer-events: none;
 }
- 
+
 .container {
   position: relative;
   width: 100%;
   max-width: 403px;
-  padding: clamp(16px, 5vh, 40px) 22px clamp(16px, 4vh, 35px);
+  padding: clamp(16px, 5dvh, 40px) 22px clamp(16px, 4dvh, 35px);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .signature {
   position: absolute;
   top: 18px;
@@ -60,30 +61,30 @@ html, body {
   transform: rotate(-10deg);
   transform-origin: top left;
 }
- 
+
 .cover-wrap {
   width: 100%;
-  max-width: min(260px, 30vh);
+  max-width: min(260px, 30dvh);
   aspect-ratio: 1 / 1;
   align-self: center;
 }
- 
+
 .cover {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
- 
+
 .titles {
   width: 100%;
   max-width: 359px;
-  margin-top: clamp(8px, 2vh, 16px);
+  margin-top: clamp(8px, 2dvh, 16px);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1px;
 }
- 
+
 .titles h1 {
   margin: 0;
   text-align: center;
@@ -91,7 +92,7 @@ html, body {
   font-size: 25px;
   font-weight: 800;
 }
- 
+
 .titles p {
   margin: 0;
   text-align: center;
@@ -99,11 +100,11 @@ html, body {
   font-size: 18px;
   font-weight: 700;
 }
- 
+
 .platforms-card {
   width: 100%;
   max-width: 359px;
-  margin-top: clamp(8px, 2vh, 16px);
+  margin-top: clamp(8px, 2dvh, 16px);
   background: linear-gradient(136deg, rgba(0, 0, 0, 0.20) 0%, rgba(174, 131, 214, 0.20) 100%);
   box-shadow:
     0px 1px 3px #D2D2D2,
@@ -115,27 +116,27 @@ html, body {
   flex-direction: column;
   overflow: hidden;
 }
- 
+
 .platform-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: clamp(8px, 1.8vh, 16px) 16px clamp(8px, 1.8vh, 16px) 26px;
+  padding: clamp(8px, 1.8dvh, 16px) 16px clamp(8px, 1.8dvh, 16px) 26px;
   text-decoration: none;
 }
- 
+
 .platform-row + .platform-row {
   border-top: 2px solid var(--card-border);
 }
- 
+
 .platform-left {
   display: flex;
   align-items: center;
   gap: 12px;
   min-width: 0;
 }
- 
+
 .platform-icon {
   height: 38px;
   max-width: 150px;
@@ -143,7 +144,7 @@ html, body {
   object-fit: contain;
   flex-shrink: 0;
 }
- 
+
 .platform-icon-fallback {
   height: 38px;
   padding: 0 10px;
@@ -154,7 +155,7 @@ html, body {
   font-size: 18px;
   white-space: nowrap;
 }
- 
+
 .btn-listen {
   flex-shrink: 0;
   background: var(--btn-bg);
@@ -166,9 +167,9 @@ html, body {
   white-space: nowrap;
   text-decoration: none;
 }
- 
+
 .instagram {
-  margin-top: clamp(10px, 2vh, 20px);
+  margin-top: clamp(10px, 2dvh, 20px);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -177,27 +178,27 @@ html, body {
   font-size: 16px;
   font-weight: 600;
 }
- 
+
 .instagram .ig-icon {
   width: 20px;
   height: 20px;
   opacity: 0.6;
 }
- 
+
 .platform-name {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
 }
- 
+
 @media (max-width: 420px) {
   .container {
     padding-left: 18px;
     padding-right: 18px;
   }
 }
- 
+
 @media (min-width: 700px) {
   .page {
     align-items: center;
