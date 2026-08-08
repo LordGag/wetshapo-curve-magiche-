@@ -1,8 +1,9 @@
 {
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/",
-      "destination": "/curvemagiche",
+      "destination": "/curvemagiche/",
       "permanent": false
     }
   ]
