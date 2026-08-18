@@ -41,7 +41,7 @@ const SMART_LINK_CONFIG = {
       iconOffsetX: -15,
       iconMaxWidth: 220,
       buttonLabel: "Guarda ora",
-      url: "https://www.youtube.com/watch?v=f2KRKc359rI",
+      url: "https://www.youtube.com/watch?v=NLbboKeVQX0",
       enabled: true
     },
     {
